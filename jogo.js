@@ -71,7 +71,7 @@ function posicaoRandomica() {
       return;
     }
 
-    document.getElementById(`v${vidas}`).src = "imagens/coracao_vazio.png";
+    document.getElementById(`v${vidas}`).src = "coracao_vazio.png";
     vidas++;
   }
 
@@ -81,7 +81,7 @@ function posicaoRandomica() {
   posicaoY = Math.max(0, posicaoY);
 
   const mosca = document.createElement('img');
-  mosca.src = 'imagens/mosca.png';
+  mosca.src = 'mosca.png';
   mosca.className = `${tamanhoAleatorio()} ${ladoAleatorio()}`;
   mosca.style.left = `${posicaoX}px`;
   mosca.style.top = `${posicaoY}px`;
